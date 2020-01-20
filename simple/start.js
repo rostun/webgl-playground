@@ -19,6 +19,7 @@ function main() {
         -0.5, 0.5, 0.0,
         0.0, 0.5, 0.0,
         -0.25, 0.25, 0.0,
+        0.0, 0.0, 0.0,
     ];
 
     // Create an empty buffer object to store the vertex buffer
@@ -113,7 +114,8 @@ function main() {
     gl.viewport(0, 0, canvas.width, canvas.height);
 
     // Draw the triangle
-    gl.drawArrays(gl.POINTS, 0, 3);
+    //drawArrays(mode, starting index, number of indices to render);
+    gl.drawArrays(gl.POINTS, 0, 4);
 }
 
 function checkContext(wgl) {
