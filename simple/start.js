@@ -75,7 +75,7 @@ function main() {
 
     // Attach a vertex shader
     gl.attachShader(shaderProgram, vertShader);
-//TEST
+
     // Attach a fragment shader
     gl.attachShader(shaderProgram, fragShader);
 
